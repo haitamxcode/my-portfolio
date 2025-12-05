@@ -5,7 +5,7 @@ import { ArrowUpRight } from '@phosphor-icons/react';
 import { Button } from './ui/button';
 import project00 from '@/assets/images/project-03.png';
 import project01 from '@/assets/images/project-00.png';
-import project02 from '@/assets/images/project-02.png'; 
+import project02 from '@/assets/images/project-02.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -15,21 +15,21 @@ const projects = [
     description: 'Interactive Site to Show the Web My Identity and what I am Capable of',
     image: project00,
     tags: ['React', 'Tailwindcss'],
-    link: 'https://github.com/hik4r/my-portfolio',
+    link: 'https://github.com/kylenxcode/my-portfolio/',
   },
   {
     title: 'Golden Wings (work in progress)',
     description: 'Showcasing the Services of the Entreprise and Management of Appointments.',
     image: project01,
     tags: ['React', 'Tailwindcss', 'MySQL'],
-    link: 'https://github.com/hik4r/golden-wings',
+    link: 'https://github.com/kylenxcode/golden-wings-custom/',
   },
   {
     title: 'LeafHub (work in progress)',
     description: 'Browse, Read, Write Books and Interact with your Authors/Readers all in one Place.',
     image: project02,
     tags: ['Laravel', 'Tailwindcss', 'MongoDB'],
-    link: 'https://github.com/hik4r/leafhub',
+    link: 'https://github.com/kylenxcode/leafhub/',
   },
 ];
 
@@ -109,19 +109,26 @@ const Projects = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-1000 filter grayscale group-hover:grayscale-0 group-hover:scale-105"
+                  className="w-full h-full object-cover transition-transform 
+                  duration-1000 filter grayscale group-hover:grayscale-0 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-[#0c4b49]/70 translate-y-0 group-hover:-translate-y-full transition-transform duration-700 ease-out" />
-                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
+                <div className="absolute inset-0 bg-[#0c4b49]/70 translate-y-0 
+                     group-hover:-translate-y-full transition-transform 
+                     duration-700 ease-out" />
+                <div className="absolute inset-0 bg-gradient-to-t from-background 
+                     via-background/50 to-transparent opacity-60 group-hover:opacity-40 
+                     transition-opacity" />
               </div>
 
               {/* Content */}
               <div className="p-6 space-y-4">
-                <h3 className="text-2xl font-bold transition-colors duration-500 font-cinzel-decorative group-hover:gradient-text glow-text">
+                <h3 className="text-2xl font-bold transition-colors duration-500 
+                    font-cinzel-decorative group-hover:gradient-text glow-text">
                   {project.title}
                 </h3>
 
-                <p className="text-foreground/60 text-sm transition-colors duration-600 font-karina group-hover:text-foreground glow-text">
+                <p className="text-foreground/60 text-sm transition-colors
+                   duration-600 font-karina group-hover:text-foreground glow-text">
                   {project.description}
                 </p>
 
@@ -130,7 +137,10 @@ const Projects = () => {
                   {project.tags.map((tag, i) => (
                     <span
                       key={i}
-                      className="px-3 py-1 text-xs rounded-full glass border font-karina border-primary/30 text-foreground/60 group-hover:text-foreground transition-colors duration-500 glow-text"
+                      className="px-3 py-1 text-xs rounded-full glass border 
+                      font-karina border-primary/30 text-foreground/60 
+                      group-hover:text-foreground transition-colors 
+                      duration-500 glow-text"
                     >
                       {tag}
                     </span>
@@ -145,7 +155,10 @@ const Projects = () => {
                 >
                   <Button
                     variant="outline"
-                    className="w-full glass font-cinzel border-primary/50 hover:bg-[#0c4b49] group-hover:shadow-lg group-hover:shadow-primary transition-all duration-500"
+                    className="w-full glass font-cinzel border-primary/50 
+                    hover:bg-[#0c4b49] group-hover:shadow-lg 
+                    text-foreground/60 group-hover:text-foreground 
+                    group-hover:shadow-primary transition-all duration-500 mt-6"
                   >
                     View Project
                     <ArrowUpRight size={16} className="ml-2" />

@@ -1,11 +1,12 @@
 import { useEffect, useRef, useState } from 'react';
+import emailjs from "@emailjs/browser";
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { GithubLogo, LinkedinLogo, EnvelopeSimple } from '@phosphor-icons/react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
- 
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -22,7 +23,7 @@ const Contact = () => {
     const ctx = gsap.context(() => {
       gsap.fromTo(
         '.contact-input',
-        { 
+        {
           opacity: 0,
           x: -50
         },
@@ -41,7 +42,7 @@ const Contact = () => {
 
       gsap.fromTo(
         '.social-icon',
-        { 
+        {
           opacity: 0,
           scale: 0
         },
@@ -62,29 +63,45 @@ const Contact = () => {
     return () => ctx.revert();
   }, []);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    
-    // Basic validation
+
     if (!formData.name || !formData.email || !formData.message) {
-      alert('Please fill in all fields');
+      alert("Please fill in all fields");
       return;
     }
 
-    // Success animation
-    gsap.to(formRef.current, {
-      scale: 1.05,
-      duration: 0.2,
-      yoyo: true,
-      repeat: 1,
-      ease: 'power2.inOut'
-    });
+    try {
+      const result = await emailjs.send(
+        "service_qxxowbj",
+        "template_x8f22lr",
+        {
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        },
+        "Ph4uUPkUy8gkv8XZp"
+      );
 
-    alert("Message sent! I'll get back to you soon.");
-    
-    // Reset form
-    setFormData({ name: '', email: '', message: '' });
+      if (result.status === 200) {
+
+        gsap.to(formRef.current, {
+          scale: 1.05,
+          duration: 0.2,
+          yoyo: true,
+          repeat: 1,
+          ease: "power2.inOut",
+        });
+
+        alert("Message sent successfully!");
+        setFormData({ name: "", email: "", message: "" });
+      }
+    } catch (error) {
+      console.error(error);
+      alert("Error sending message. Try again later.");
+    }
   };
+
 
   return (
     <section ref={sectionRef} id="contact" className="py-20 md:py-32 relative overflow-hidden">
@@ -108,7 +125,7 @@ const Contact = () => {
               <label htmlFor="name" className="text-sm font-cinzel-decorative font-bold text-foreground/80">
                 Name
               </label>
-              <Input 
+              <Input
                 id="name"
                 type="text"
                 value={formData.name}
@@ -122,7 +139,7 @@ const Contact = () => {
               <label htmlFor="email" className="text-sm font-cinzel-decorative font-bold text-foreground/80">
                 Email
               </label>
-              <Input 
+              <Input
                 id="email"
                 type="email"
                 value={formData.email}
@@ -136,7 +153,7 @@ const Contact = () => {
               <label htmlFor="message" className="text-sm font-bold font-cinzel-decorative text-foreground/80">
                 Message
               </label>
-              <Textarea 
+              <Textarea
                 id="message"
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
@@ -145,7 +162,7 @@ const Contact = () => {
               />
             </div>
 
-            <Button 
+            <Button
               type="submit"
               className="contact-input font-cinzel-decorative w-full bg-gradient-to-r from-primary to-secondary hover:shadow-lg hover:shadow-primary transition-all duration-500 hover:scale-105"
               size="lg"
@@ -157,17 +174,17 @@ const Contact = () => {
 
           {/* Social Icons */}
           <div className="social-icons flex justify-center gap-6 mt-8 pt-8 border-t border-border">
-            <a 
-              href="https://github.com/kylenxcode" 
-              target="_blank" 
+            <a
+              href="https://github.com/kylenxcode"
+              target="_blank"
               rel="noopener noreferrer"
               className="social-icon text-foreground/60 hover:text-foreground p-3 glass rounded-full hover:glow-border hover:bg-primary transition-all duration-300 hover:scale-110"
             >
               <GithubLogo size={24} weight="fill" />
             </a>
-            <a 
-              href="https://linkedin.com/in/kylenxcode" 
-              target="_blank" 
+            <a
+              href="https://linkedin.com/in/kylenxcode"
+              target="_blank"
               rel="noopener noreferrer"
               className="social-icon text-foreground/60 hover:text-foreground p-3 glass rounded-full hover:glow-border hover:bg-primary transition-all duration-300 hover:scale-110"
             >

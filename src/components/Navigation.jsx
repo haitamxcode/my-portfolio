@@ -38,25 +38,25 @@ const Navigation = () => {
             <button onClick={() => scrollToSection('home')} className="font-cinzel glow-text text-foreground/80 hover:text-foreground transition-colors">
               Home
             </button>
-            <span className="h-5 w-px bg-border bg-foreground/80" />
+            <span className="h-4 w-px bg-border bg-foreground/80" />
             <button onClick={() => scrollToSection('about')} className="font-cinzel glow-text text-foreground/80 hover:text-foreground transition-colors">
               About
             </button>
-            <span className="h-5 w-px bg-border bg-foreground/80" />
+            <span className="h-4 w-px bg-border bg-foreground/80" />
             <button onClick={() => scrollToSection('projects')} className="font-cinzel glow-text text-foreground/80 hover:text-foreground transition-colors">
               Projects
             </button>
-            <span className="h-5 w-px bg-border bg-foreground/80" />
+            <span className="h-4 w-px bg-border bg-foreground/80" />
             <button onClick={() => scrollToSection('contact')} className="font-cinzel glow-text text-foreground/80 hover:text-foreground transition-colors">
               Contact
             </button>
-            <span className="h-5 w-px bg-border bg-foreground/80" />
+            <span className="h-4 w-px bg-border bg-foreground/80" />
             <a
-              href="./public/my-resume.pdf"
-              download
+              href="https://www.instagram.com/obsessedkyser/"
+              target="_blank" rel="noopener noreferrer"
               className="rounded-md bg-gradient-to-r from-primary to-secondary text-primary-foreground px-4 py-2 text-sm font-medium transition-all hover:shadow-lg hover:shadow-primary/50 hover:scale-105 font-cinzel"
             >
-              My Resume
+              My Socials
             </a>
           </div>
 
@@ -89,11 +89,11 @@ const Navigation = () => {
             </button>
             <div className="h-px w-full bg-border/60" />
             <a
-              href="./my-resume.pdf"
-              download
-              className="mx-auto w-auto rounded-md bg-gradient-to-r from-primary to-secondary text-primary-foreground px-4 py-2 text-sm font-medium font-cinzel"
+              href="https://www.instagram.com/obsessedkyser/"
+              target="_blank" rel="noopener noreferrer"
+              className="rounded-md bg-gradient-to-r from-primary to-secondary text-primary-foreground px-4 py-2 text-sm font-medium transition-all hover:shadow-lg hover:shadow-primary/50 hover:scale-105 font-cinzel"
             >
-              My Resume
+              My Socials
             </a>
           </div>
         )}
