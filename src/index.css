@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @font-face {
   font-family: 'Heavitas';
-  src: url('./public/fonts/Heavitas.woff2') format('woff2');
+  src: url('./assets/fonts/Heavitas.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -12,7 +13,7 @@
 
 @font-face {
   font-family: 'Cinzel';
-  src: url('./public/fonts/Cinzel-Regular.woff2') format('woff2');
+  src: url('./assets/fonts/Cinzel-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -20,7 +21,7 @@
 
 @font-face {
   font-family: 'Cinzel Decorative';
-  src: url('./public/fonts/CinzelDecorative-Regular.woff2') format('woff2');
+  src: url('./assets/fonts/CinzelDecorative-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -28,7 +29,7 @@
 
 @font-face {
   font-family: 'Cinzel Decorative';
-  src: url('./public/fonts/CinzelDecorative-Bold.woff2') format('woff2');
+  src: url('./assets/fonts/CinzelDecorative-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -36,7 +37,7 @@
 
 @font-face {
   font-family: 'Minecraft';
-  src: url('./public/fonts/Minecraft.woff2') format('woff2');
+  src: url('./assets/fonts/Minecraft.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -44,7 +45,7 @@
 
 @font-face {
   font-family: 'Super Crawler';
-  src: url('./public/fonts/SuperCrawler.woff2') format('woff2');
+  src: url('./assets/fonts/SuperCrawler.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -52,7 +53,7 @@
 
 @font-face {
   font-family: 'Karina';
-  src: url('./public/fonts/Karina.woff2') format('woff2');
+  src: url('./assets/fonts/Karina.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -60,7 +61,7 @@
 
 @font-face {
   font-family: 'Angel Wish';
-  src: url('./public/fonts/AngelWish.woff2') format('woff2');
+  src: url('./assets/fonts/AngelWish.woff2') format('woff2');
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -68,7 +69,7 @@
 
 @font-face {
   font-family: 'Doc Allisme On Street';
-  src: url('./public/fonts/docallismeonstreet.woff2') format('woff2');
+  src: url('./assets/fonts/docallismeonstreet.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -76,7 +77,7 @@
 
 @font-face {
   font-family: 'Graffiti Youth';
-  src: url('./public/fonts/GraffitiYouth-Regular.woff2') format('woff2');
+  src: url('./assets/fonts/GraffitiYouth-Regular.woff2') format('woff2');
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -84,7 +85,7 @@
 
 @font-face {
   font-family: 'Stormlight';
-  src: url('./public/fonts/Stormlight.woff2') format('woff2');
+  src: url('./assets/fonts/Stormlight.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -92,7 +93,7 @@
 
 @font-face {
   font-family: 'Techno Hideo Bold';
-  src: url('./public/fonts/techno-hideo-bold.woff2') format('woff2');
+  src: url('./assets/fonts/techno-hideo-bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -100,7 +101,7 @@
 
 @font-face {
   font-family: 'Techno Hideo';
-  src: url('./public/fonts/techno-hideo.woff2') format('woff2');
+  src: url('./assets/fonts/techno-hideo.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -108,7 +109,7 @@
 
 @font-face {
   font-family: 'Boston';
-  src: url('./public/fonts/boston-caps.woff2') format('woff2');
+  src: url('./assets/fonts/boston-caps.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -116,7 +117,7 @@
 
 @font-face {
   font-family: 'Digital';
-  src: url('./public/fonts/ds-digital.woff2') format('woff2');
+  src: url('./assets/fonts/ds-digital.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -124,7 +125,7 @@
 
 @font-face {
   font-family: 'Digital-Bold';
-  src: url('./public/fonts/ds-digital-bold.woff2') format('woff2');
+  src: url('./assets/fonts/ds-digital-bold.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -132,7 +133,7 @@
 
 @font-face {
   font-family: 'Digital-Italic';
-  src: url('./public/fonts/ds-digital-ita.woff2') format('woff2');
+  src: url('./assets/fonts/ds-digital-ita.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -140,7 +141,7 @@
 
 @font-face {
   font-family: 'Digital-Bold-Italic';
-  src: url('./public/fonts/ds-digital-bold-ita.woff2') format('woff2');
+  src: url('./assets/fonts/ds-digital-bold-ita.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -148,7 +149,7 @@
 
 @font-face {
   font-family: 'Kastroo';
-  src: url('./public/fonts/KASTROO.woff2') format('woff2');
+  src: url('./assets/fonts/KASTROO.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -156,7 +157,7 @@
 
 @font-face {
   font-family: 'Ghrathe';
-  src: url('./public/fonts/Ghrathe.woff2') format('woff2');
+  src: url('./assets/fonts/Ghrathe.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -164,7 +165,7 @@
 
 @font-face {
   font-family: 'Rodfat';
-  src: url('./public/fonts/rodfat.woff2') format('woff2');
+  src: url('./assets/fonts/rodfat.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
