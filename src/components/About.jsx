@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { useIsMobile } from '@/hooks/use-mobile';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import profileImage from '@/assets/images/my-image.png';
+import profileImage from '@/assets/images/my-image-2.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
