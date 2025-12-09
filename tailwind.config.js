@@ -7,7 +7,6 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        montserrat: ['Montserrat', 'sans-serif'],
         heavitas: ['Heavitas', 'sans-serif'],
         cinzel: ['Cinzel', 'serif'],
         'cinzel-decorative': ['Cinzel Decorative', 'serif'],
