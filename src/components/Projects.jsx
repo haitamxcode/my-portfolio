@@ -6,6 +6,7 @@ import { Button } from './ui/button';
 import project00 from '@/assets/images/project-01.png';
 import project01 from '@/assets/images/project-00.png';
 import project02 from '@/assets/images/project-02.png';
+import project03 from '@/assets/images/project-03.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
