@@ -117,7 +117,7 @@
 
 @font-face {
   font-family: 'Digital';
-  src: url('./assets/fonts/ds-digital.woff2') format('woff2');
+  src: url('./assets/fonts/ds-digi.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -125,7 +125,7 @@
 
 @font-face {
   font-family: 'Digital-Bold';
-  src: url('./assets/fonts/ds-digital-bold.woff2') format('woff2');
+  src: url('./assets/fonts/ds-digi-bold.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -133,7 +133,7 @@
 
 @font-face {
   font-family: 'Digital-Italic';
-  src: url('./assets/fonts/ds-digital-ita.woff2') format('woff2');
+  src: url('./assets/fonts/ds-digi-ita.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -141,7 +141,7 @@
 
 @font-face {
   font-family: 'Digital-Bold-Italic';
-  src: url('./assets/fonts/ds-digital-bold-ita.woff2') format('woff2');
+  src: url('./assets/fonts/ds-digi-bold-ita.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
